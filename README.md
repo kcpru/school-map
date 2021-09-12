@@ -1,3 +1,3 @@
 # school-map
-School map
-_Start_
+_School map_
+
