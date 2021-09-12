@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function SVGMap({
-  className,
+  className = "svg-map",
   map,
-  role,
+  role = "none",
   childrenBefore,
   childrenAfter,
   onLocationClick,
@@ -43,7 +43,7 @@ SVGMap.propTypes = {
         path: PropTypes.string.isRequired,
         id: PropTypes.string.isRequired,
         name: PropTypes.string,
-        label: PropTypes.string
+        label: PropTypes.string,
       })
     ).isRequired,
     label: PropTypes.string,
@@ -57,11 +57,6 @@ SVGMap.propTypes = {
   // Slots
   childrenBefore: PropTypes.node,
   childrenAfter: PropTypes.node,
-};
-
-SVGMap.defaultProps = {
-  className: "svg-map",
-  role: "none", // No role for map
 };
 
 export default SVGMap;

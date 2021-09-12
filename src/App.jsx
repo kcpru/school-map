@@ -1,11 +1,11 @@
 import React from "react";
-import RadioSVGMap from "./helpers/svg-map/map";
-import "./App.css";
-import map from './assets/maps/pietro1.json'
+
+import Map from "./helpers/svg-map/map";
+import pietro1 from './assets/maps/pietro1.json'
 
 function App() {
   return <div className="App">
-    <RadioSVGMap map={map} />
+    <Map map={pietro1} />
   </div>;
 }
 

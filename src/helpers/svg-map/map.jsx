@@ -1,158 +1,40 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import SVGMap from "./svg-map";
 
-class RadioSVGMap extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      selectedLocation: null,
-    };
-
-    this.getLocationTabIndex = this.getLocationTabIndex.bind(this);
-    this.isLocationSelected = this.isLocationSelected.bind(this);
-    this.handleLocationClick = this.handleLocationClick.bind(this);
-    this.handleLocationKeyDown = this.handleLocationKeyDown.bind(this);
-  }
-
-  componentDidMount() {
-    // List of location nodes
-    this.locations = [
-      ...ReactDOM.findDOMNode(this).getElementsByTagName("path"),
-    ];
-
-    // Set initial selected location
-    if (this.props.selectedLocationId) {
-      const selectedLocation = this.locations.find(
-        (location) => location.id === this.props.selectedLocationId
-      );
-
-      this.setState({ selectedLocation });
-    }
-  }
-
-  /**
-   * Get location tabindex value
-   *
-   * @param {Object} location - Location object
-   * @param {number} index - Index of location
-   * @returns {string} Value of tabindex HTML attribute
-   */
-  getLocationTabIndex(location, index) {
-    let tabIndex = null;
-
-    if (this.state.selectedLocation) {
-      // Only selected location is focusable
-      tabIndex = this.isLocationSelected(location) ? "0" : "-1";
-    } else {
-      // Only first location is focusable
-      tabIndex = index === 0 ? "0" : "-1";
-    }
-
-    return tabIndex;
-  }
-
-  /**
-   * Indicate whether a location is selected
-   *
-   * @param {Object} location - Location object
-   * @returns {boolean} True if the location is selected
-   */
-  isLocationSelected(location) {
-    return (
-      this.state.selectedLocation &&
-      this.state.selectedLocation.id === location.id
-    );
-  }
-
-  /**
-   * Select a location
-   *
-   * @param {Node} location - Location DOM node
-   */
-  selectLocation(location) {
-    // Focus new selected location
-    location.focus();
-
-    // Change selected location
-    this.setState({ selectedLocation: location });
-
-    // Call onChange event handler
-    if (this.props.onChange) {
-      this.props.onChange(location);
-    }
-  }
-
+function Map({
+  map,
+  className,
+  locationClassName,
+  locationAriaLabel,
+  childrenBefore,
+  childrenAfter,
+}) {
   /**
    * Handle click on a location
    *
    * @param {Event} event - Triggered click event
    */
-  handleLocationClick(event) {
-    const clickedLocation = event.target;
-    console.log("XD")
-    // Select clicked location if not already selected
-    if (clickedLocation !== this.state.selectedLocation) {
-      this.selectLocation(clickedLocation);
-    }
-  }
+  const handleLocationClick = (event) => {
+    console.log("XD");
+  };
 
-  /**
-   * Handle spacebar and arrows down on a location
-   *
-   * @param {Event} event - Triggered keydown event
-   */
-  handleLocationKeyDown(event) {
-    const focusedLocation = event.target;
-
-    // Spacebar
-    if (event.keyCode === 32) {
-      event.preventDefault();
-
-      // Select focused location if not already selected
-      if (focusedLocation !== this.state.selectedLocation) {
-        this.selectLocation(focusedLocation);
-      }
-
-      // Arrow down or right
-    } else if (event.keyCode === 39 || event.keyCode === 40) {
-      event.preventDefault();
-
-      // Select next or first location
-      this.selectLocation(focusedLocation.nextSibling || this.locations[0]);
-
-      // Arrow up or left
-    } else if (event.keyCode === 37 || event.keyCode === 38) {
-      event.preventDefault();
-
-      // Select previous or last location
-      this.selectLocation(
-        focusedLocation.previousSibling ||
-          this.locations[this.locations.length - 1]
-      );
-    }
-  }
-
-  render() {
-    return (
-      <SVGMap
-        map={this.props.map}
-        role="radiogroup"
-        locationRole="radio"
-        className={this.props.className}
-        locationClassName={this.props.locationClassName}
-        locationAriaLabel={this.props.locationAriaLabel}
-        onLocationClick={this.handleLocationClick}
-        childrenBefore={this.props.childrenBefore}
-        childrenAfter={this.props.childrenAfter}
-      />
-    );
-  }
+  return (
+    <SVGMap
+      map={map}
+      role="radiogroup"
+      locationRole="radio"
+      className={className}
+      locationClassName={locationClassName}
+      locationAriaLabel={locationAriaLabel}
+      onLocationClick={handleLocationClick}
+      childrenBefore={childrenBefore}
+      childrenAfter={childrenAfter}
+    />
+  );
 }
 
-RadioSVGMap.propTypes = {
+Map.propTypes = {
   selectedLocationId: PropTypes.string,
   onChange: PropTypes.func,
 
@@ -169,15 +51,10 @@ RadioSVGMap.propTypes = {
     label: PropTypes.string,
   }).isRequired,
   className: PropTypes.string,
-  locationClassName: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  locationClassName: PropTypes.string,
   locationAriaLabel: PropTypes.func,
-  onLocationMouseOver: PropTypes.func,
-  onLocationMouseOut: PropTypes.func,
-  onLocationMouseMove: PropTypes.func,
-  onLocationFocus: PropTypes.func,
-  onLocationBlur: PropTypes.func,
   childrenBefore: PropTypes.node,
   childrenAfter: PropTypes.node,
 };
 
-export default RadioSVGMap;
+export default Map;
