@@ -1,22 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SVGMap from "./svg-map";
+import SVGMap from "./SVGMap";
 
 function Map({
   map,
   className,
-  locationClassName,
   locationAriaLabel,
+  locationClassName,
   childrenBefore,
   childrenAfter,
 }) {
-  /**
-   * Handle click on a location
-   *
-   * @param {Event} event - Triggered click event
-   */
-  const handleLocationClick = (event) => {
-    console.log("XD");
+  const handleLocationClick = (location) => {
+    console.log(location.id, location.description);
   };
 
   return (

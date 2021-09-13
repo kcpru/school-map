@@ -18,6 +18,7 @@ function SVGMap({
       aria-label={map.label}
     >
       {childrenBefore}
+
       {map.locations.map((location) => (
         <path
           id={location.id}
@@ -25,10 +26,11 @@ function SVGMap({
           d={location.path}
           className={location.ClassName}
           aria-label={location.label}
-          onClick={onLocationClick}
+          onClick={() => onLocationClick(location)}
           key={location.id}
         />
       ))}
+
       {childrenAfter}
     </svg>
   );
