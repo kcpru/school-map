@@ -1,5 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+
+import { setLocation } from "../../store/slices/locationSlice";
 import SVGMap from "./SVGMap";
 
 function Map({
@@ -10,8 +13,13 @@ function Map({
   childrenBefore,
   childrenAfter,
 }) {
+  const dispatch = useDispatch();
+  const _location = useSelector(state=> state.location)
+  const {id, name} = _location;
+
   const handleLocationClick = (location) => {
-    console.log(location.id, location.description);
+    console.log({id, name});
+    dispatch(setLocation(location));
   };
 
   return (
