@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { setLocation } from "../../store/slices/locationSlice";
 import SVGMap from "./SVGMap";
@@ -14,11 +14,8 @@ function Map({
   childrenAfter,
 }) {
   const dispatch = useDispatch();
-  const _location = useSelector(state=> state.location)
-  const {id, name} = _location;
 
   const handleLocationClick = (location) => {
-    console.log({id, name});
     dispatch(setLocation(location));
   };
 
@@ -47,7 +44,7 @@ Map.propTypes = {
     locations: PropTypes.arrayOf(
       PropTypes.shape({
         path: PropTypes.string.isRequired,
-        name: PropTypes.string,
+        label: PropTypes.string,
         id: PropTypes.string,
       })
     ).isRequired,

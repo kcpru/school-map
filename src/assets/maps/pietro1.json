@@ -4,111 +4,129 @@
   "locations": [
     {
       "id": "0",
-      "name": "Sala gimnastyczna",
+      "value": "0",
+      "label": "Sala gimnastyczna",
       "description": "Lorem ipsum",
       "path": "m 1803.49,0 h 195.53 v 275.88 h -195.53 z"
     },
     {
       "id": "1",
-      "name": "Szatnia",
+      "value": "1",
+      "label": "Szatnia",
       "description": "Lorem ipsum",
       "path": "m 1596.73,137.94 h 71.71 v 137.94 h -71.71 z"
     },
     {
       "id": "2",
-      "name": "TSZK",
+      "value": "2",
+      "label": "TSZK",
       "description": "Lorem ipsum",
       "path": "m 1668.4399,137.94 h 75.88 v 137.94 h -75.88 z"
     },
     {
       "id": "3",
-      "name": "Sekretariat uczniowski",
+      "value": "3",
+      "label": "Sekretariat uczniowski",
       "description": "Lorem ipsum",
       "path": "m 1803.49,290.70999 h 143.41 v 75.88 h -143.41 z"
     },
     {
       "id": "4",
-      "name": "Ksero",
+      "value": "4",
+      "label": "Ksero",
       "description": "Lorem ipsum",
       "path": "m 1803.49,366.59 h 143.41 v 75.87999 h -143.41 z"
     },
     {
       "id": "5",
-      "name": "Hala",
+      "value": "5",
+      "label": "Hala",
       "description": "Lorem ipsum",
       "path": "m 2371.96,232.82001 h 218.35 v 419.29001 h -218.35 z"
     },
     {
       "id": "6",
-      "name": "Sekretariat",
+      "value": "6",
+      "label": "Sekretariat",
       "description": "Lorem ipsum",
       "path": "m 2142.4399,526.46997 h 143.41 v 125.65 h -143.41 z"
     },
     {
       "id": "7",
-      "name": "Pokój dyrektorski",
+      "value": "7",
+      "label": "Pokój dyrektorski",
       "description": "Lorem ipsum",
       "path": "m 1999.02,526.46997 h 143.41 v 125.65 h -143.41 z"
     },
     {
       "id": "8",
-      "name": "Sala 27",
+      "value": "8",
+      "label": "Sala 27",
       "description": "Lorem ipsum",
       "path": "m 1435.49,526.46997 h 232.94 v 125.65 h -232.94 z"
     },
     {
       "id": "9",
-      "name": "Sala 30",
+      "value": "9",
+      "label": "Sala 30",
       "description": "Lorem ipsum",
       "path": "m 1185.61,526.46997 h 249.88 v 125.65 h -249.88 z"
     },
     {
       "id": "10",
-      "name": "Sala 32",
+      "value": "10",
+      "label": "Sala 32",
       "description": "Lorem ipsum",
       "path": "m 885.38,526.46997 h 300.23 v 125.65 H 885.38 Z"
     },
     {
       "id": "11",
-      "name": "Sala 36",
+      "value": "11",
+      "label": "Sala 36",
       "description": "Lorem ipsum",
       "path": "m 606.78998,526.46997 h 278.58899 v 125.65 H 606.78998 Z"
     },
     {
       "id": "12",
-      "name": "Sala 26",
+      "value": "12",
+      "label": "Sala 26",
       "description": "Lorem ipsum",
       "path": "m 1435.49,750.94 h 232.94 v 125.65 h -232.94 z"
     },
     {
       "id": "13",
-      "name": "Sala 38",
+      "value": "13",
+      "label": "Sala 38",
       "description": "Lorem ipsum",
       "path": "M 413.97,744.94 H 536.2 V 949.29001 H 413.97 Z"
     },
     {
       "id": "14",
-      "name": "Sala 42",
+      "value": "14",
+      "label": "Sala 42",
       "description": "Lorem ipsum",
       "transform": "rotate(6.27,103.16943,536.22195)",
       "path": "M 6.29,473 H 199.98 V 598.65 H 6.29 Z"
     },
     {
       "id": "15",
-      "name": "K",
+      "value": "15",
+      "label": "K",
       "description": "Lorem ipsum",
       "transform": "rotate(6.27,252.03345,552.60757)",
       "path": "m 198.8,489.35999 h 106.18 v 125.65 H 198.8 Z"
     },
     {
       "id": "16",
-      "name": "Pokój nauczycielski",
+      "value": "16",
+      "label": "Pokój nauczycielski",
       "description": "Lorem ipsum",
       "path": "m 1803.49,526.46997 h 195.53 v 394.94 h -195.53 z"
     },
     {
       "id": "17",
-      "name": "Sala 37",
+      "value": "17",
+      "label": "Sala 37",
       "description": "Lorem ipsum",
       "path": "M 606.93,526.5 425.7,508.35 410.7,632.44 607,652.1 v -124 a 5.37,5.37 0 0 1 -0.07,-1.6 z"
     }
