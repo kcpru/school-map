@@ -1,5 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
+
+import "./SVGMap.scss";
+
+function SVGPath({ location, onLocationClick }) {
+  const activeLocation = useSelector((state) => state.location.value);
+
+  return (
+    <path
+      id={location.id}
+      name={location.name}
+      d={location.path}
+      className={`path ${activeLocation.id === location.id ? "active" : ""}`}
+      aria-label={location.label}
+      onClick={() => onLocationClick(location)}
+    />
+  );
+}
 
 function SVGMap({
   className = "svg-map",
@@ -20,13 +38,9 @@ function SVGMap({
       {childrenBefore}
 
       {map.locations.map((location) => (
-        <path
-          id={location.id}
-          name={location.name}
-          d={location.path}
-          className={location.ClassName}
-          aria-label={location.label}
-          onClick={() => onLocationClick(location)}
+        <SVGPath
+          location={location}
+          onLocationClick={onLocationClick}
           key={location.id}
         />
       ))}

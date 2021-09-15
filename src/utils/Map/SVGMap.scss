@@ -1,0 +1,15 @@
+svg {
+  .path {
+    cursor: pointer;
+    transition: 0.1s;
+    fill: rgba(255, 166, 0, 0.205);
+    stroke: rgba(255, 166, 0, 0.5);
+    stroke-width: 5px;
+
+    &:hover,
+    &.active {
+      fill: rgba(255, 166, 0, 0.4);
+      stroke: rgba(255, 166, 0, 0.7);
+    }
+  }
+}
