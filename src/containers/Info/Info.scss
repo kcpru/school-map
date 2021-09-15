@@ -1,11 +1,18 @@
 .info {
+  $margin: 1rem;
+
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background: white;
-  width: 200px;
+  bottom: $margin;
+  right: $margin;
+  box-sizing: border-box;
+  background: #fefcff;
+  width: calc(100vw - #{$margin * 2});
   height: 200px;
   padding: 1rem;
   border-radius: 2rem;
   box-shadow: 0 1rem 3rem -1rem #00000050;
+
+  .wrapper {
+    margin: 1rem;
+  }
 }

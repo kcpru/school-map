@@ -10,8 +10,10 @@ function Info() {
   return (
     <div className="info">
       <Search />
-      <i>id: {location.id}</i>
-      <p>{location.description}</p>
+      <div className="wrapper">
+        <i>id: {location.id}</i>
+        <p>{location.description}</p>
+      </div>
     </div>
   );
 }

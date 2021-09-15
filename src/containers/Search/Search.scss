@@ -1,0 +1,27 @@
+.react-select-container {
+  .react-select__control {
+    background: #f2f2f8;
+    border: none;
+    border-radius: 1rem;
+
+    react-select__single-value {
+    }
+
+    .react-select__value-container {
+    }
+    .react-select__indicators {
+    }
+  }
+
+  .react-select__menu {
+    border-radius: 1rem;
+    background: #f2f2f8;
+    border: none;
+    overflow: hidden;
+
+    .react-select__menu-list {
+      .react-select__option {
+      }
+    }
+  }
+}

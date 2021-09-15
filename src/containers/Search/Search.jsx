@@ -5,6 +5,8 @@ import Select from "react-select";
 import { setLocation } from "../../store/slices/locationSlice";
 import floor1 from "../../assets/maps/pietro1.json";
 
+import "./Search.scss";
+
 const floors = [floor1];
 
 const groupStyles = {
@@ -35,10 +37,10 @@ const formatGroupLabel = (data) => (
 
 function Search() {
   const dispatch = useDispatch();
-  const location = useSelector(state => state.location)
+  const location = useSelector((state) => state.location);
 
   const handleInputChange = (val) => {
-    dispatch(setLocation(val))
+    dispatch(setLocation(val));
   };
 
   return (
@@ -47,6 +49,8 @@ function Search() {
       formatGroupLabel={formatGroupLabel}
       onChange={handleInputChange}
       value={location.value}
+      className="react-select-container"
+      classNamePrefix="react-select"
     />
   );
 }
