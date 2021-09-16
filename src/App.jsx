@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, Map } from "./containers";
+import { Header, Map, Navigation } from "./containers";
 import floor0 from "./assets/maps/floor0.json";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Map map={floor0} />
+      <Navigation />
     </div>
   );
 }
