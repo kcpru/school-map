@@ -1,0 +1,18 @@
+svg {
+  .path {
+    cursor: pointer;
+    transition: 0.1s;
+    fill: #d3f5f6;
+    stroke: #1bd1cf;
+    stroke-width: 5px;
+
+    &:hover,
+    &.active {
+      fill: #1bd1ce75;
+    }
+
+    &.active {
+      fill: #1bd1cf;
+    }
+  }
+}

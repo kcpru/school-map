@@ -6,7 +6,7 @@
       "id": "0",
       "value": "0",
       "label": "Sala gimnastyczna",
-      "description": "Lorem ipsum",
+      "description": "Tutaj na małej hali odbywają się lekcje WF-u",
       "path": "m 1803.49,0 h 195.53 v 275.88 h -195.53 z"
     },
     {
@@ -20,7 +20,7 @@
       "id": "2",
       "value": "2",
       "label": "TSZK",
-      "description": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet",
       "path": "m 1668.4399,137.94 h 75.88 v 137.94 h -75.88 z"
     },
     {
@@ -90,7 +90,7 @@
       "id": "12",
       "value": "12",
       "label": "Sala 26",
-      "description": "Lorem ipsum",
+      "description": "Lekcje języka polskiego",
       "path": "m 1435.49,750.94 h 232.94 v 125.65 h -232.94 z"
     },
     {

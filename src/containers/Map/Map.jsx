@@ -5,9 +5,10 @@ import { useDispatch } from "react-redux";
 import { setLocation } from "../../store/slices/locationSlice";
 import SVGMap from "./SVGMap";
 
+import "./Map.scss";
+
 function Map({
   map,
-  className,
   locationAriaLabel,
   locationClassName,
   childrenBefore,
@@ -20,17 +21,19 @@ function Map({
   };
 
   return (
-    <SVGMap
-      map={map}
-      role="radiogroup"
-      locationRole="radio"
-      className={className}
-      locationClassName={locationClassName}
-      locationAriaLabel={locationAriaLabel}
-      onLocationClick={handleLocationClick}
-      childrenBefore={childrenBefore}
-      childrenAfter={childrenAfter}
-    />
+    <main className="map-wrapper">
+      <SVGMap
+        map={map}
+        role="radiogroup"
+        locationRole="radio"
+        className={"svg-map"}
+        locationClassName={locationClassName}
+        locationAriaLabel={locationAriaLabel}
+        onLocationClick={handleLocationClick}
+        childrenBefore={childrenBefore}
+        childrenAfter={childrenAfter}
+      />
+    </main>
   );
 }
 

@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 
 import { setLocation } from "../../store/slices/locationSlice";
-import floor1 from "../../assets/maps/pietro1.json";
+import floor0 from "../../assets/maps/floor0.json";
 
-import "./Search.scss";
+import "./SearchBar.scss";
 
-const floors = [floor1];
+const floors = [floor0];
 
 const groupStyles = {
   display: "flex",
@@ -35,7 +35,7 @@ const formatGroupLabel = (data) => (
   </div>
 );
 
-function Search() {
+function SearchBar() {
   const dispatch = useDispatch();
   const location = useSelector((state) => state.location);
 
@@ -55,4 +55,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchBar;
