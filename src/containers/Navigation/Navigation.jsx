@@ -1,6 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { BiNavigation, BiMap, BiMenuAltRight } from "react-icons/bi";
+import  {RiNewspaperLine} from 'react-icons/ri';
 
 import "./Navigation.scss";
 
@@ -21,8 +22,8 @@ function Navigation() {
           <span className="nav-btn-text">Trasa</span>
         </button>
         <button className="nav-btn">
-          <BiMenuAltRight />
-          <span className="nav-btn-text">Menu</span>
+          <RiNewspaperLine />
+          <span className="nav-btn-text">Informacje</span>
         </button>
       </nav>
     </IconContext.Provider>

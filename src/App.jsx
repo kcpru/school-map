@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Header, Map, Navigation } from "./containers";
-import floor0 from "./assets/maps/floor0.json";
+import { Header, Navigation } from "./containers";
+import { Map } from "./containers";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Map map={floor0} />
+      <Map />
       <Navigation />
     </div>
   );

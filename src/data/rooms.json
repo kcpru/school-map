@@ -1,0 +1,91 @@
+[
+  { "id": "classroom-8", "label": "Sala 8", "description": "" },
+  { "id": "classroom-9", "label": "Sala 9", "description": "" },
+  { "id": "classroom-10", "label": "Sala 10", "description": "" },
+  { "id": "classroom-11", "label": "Sala 11", "description": "" },
+  { "id": "classroom-12", "label": "Sala 12", "description": "" },
+  { "id": "classroom-13", "label": "Sala 13", "description": "" },
+  { "id": "classroom-14", "label": "Sala 14", "description": "" },
+  { "id": "classroom-15", "label": "Sala 15", "description": "" },
+  { "id": "classroom-16", "label": "Sala 16", "description": "" },
+  { "id": "classroom-17", "label": "Sala 17", "description": "" },
+  { "id": "classroom-18", "label": "Sala 18", "description": "" },
+  { "id": "classroom-19", "label": "Sala 19", "description": "" },
+  { "id": "classroom-20", "label": "Sala 20", "description": "" },
+  { "id": "classroom-21", "label": "Sala 21", "description": "" },
+  { "id": "classroom-22", "label": "Sala 22", "description": "" },
+  { "id": "classroom-23", "label": "Sala 23", "description": "" },
+  { "id": "classroom-24", "label": "Sala 24", "description": "" },
+  { "id": "classroom-25", "label": "Sala 25", "description": "" },
+  { "id": "classroom-26", "label": "Sala 26", "description": "" },
+  {
+    "id": "classroom-27",
+    "label": "Sala 27",
+    "description": "Język polski"
+  },
+  {
+    "id": "classroom-30",
+    "label": "Sala 30",
+    "description": "Język angielski"
+  },
+  {
+    "id": "classroom-31",
+    "label": "Sala 31",
+    "description": "Język francuski"
+  },
+  {
+    "id": "classroom-32",
+    "label": "Sala 32",
+    "description": "Język hiszpański"
+  },
+  {
+    "id": "classroom-33",
+    "label": "Sala 33",
+    "description": "Język niemiecki"
+  },
+  {
+    "id": "classroom-34",
+    "label": "Sala 34",
+    "description": "Język rosyjski"
+  },
+  {
+    "id": "classroom-35",
+    "label": "Sala 35",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-36",
+    "label": "Sala 36",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-37",
+    "label": "Sala 37",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-38",
+    "label": "Sala 38",
+    "description": "Język fizyki"
+  },
+  {
+    "id": "classroom-39",
+    "label": "Sala 39",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-40",
+    "label": "Sala 40",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-41",
+    "label": "Sala 41",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-42",
+    "label": "Sala 42",
+    "description": "Język włoski"
+  }
+]

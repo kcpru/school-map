@@ -1,63 +1,59 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
+import { ReactComponent as SVGMap } from "../../assets/maps/groundFloor.svg";
 import { setLocation } from "../../store/slices/locationSlice";
-import SVGMap from "./SVGMap";
+import rooms from "../../data/rooms.json";
 
-import "./Map.scss";
+import "./SVGMap.scss";
 
-function Map({
-  map,
-  locationAriaLabel,
-  locationClassName,
-  childrenBefore,
-  childrenAfter,
-}) {
+function Map() {
+  const activeLocation = useSelector((state) => state.location.value);
   const dispatch = useDispatch();
+  const mapRef = useRef(null);
 
-  const handleLocationClick = (location) => {
-    dispatch(setLocation(location));
-  };
+  useEffect(() => {
+    const mapElements = [...mapRef.current.getElementsByClassName("rooms")];
+
+    // Set the active location
+    if (activeLocation) {
+      mapElements.forEach((el) => {
+        el.classList.remove("active");
+      });
+      const activeLocationElement = mapRef.current.getElementById(
+        activeLocation.id
+      );
+      activeLocationElement && activeLocationElement.classList.add("active");
+    }
+
+    mapElements.forEach((element) => {
+      if (rooms.find((room) => room.id === element.id)) {
+        // Show rooms which are defined in the data
+        element.classList.add("clickable");
+
+        element.addEventListener("click", () => {
+          // Add active class to clicked element
+          element.classList.add("active");
+          // Find data for the clicked element
+          const clickedLocation =
+            rooms.find((el) => el.id === element.id) ?? {};
+          dispatch(setLocation(clickedLocation));
+        });
+      }
+    });
+
+    return () => {
+      mapElements.forEach((element) =>
+        element.removeEventListener("click", () => {})
+      );
+    };
+  });
 
   return (
-    <main className="map-wrapper">
-      <SVGMap
-        map={map}
-        role="radiogroup"
-        locationRole="radio"
-        className={"svg-map"}
-        locationClassName={locationClassName}
-        locationAriaLabel={locationAriaLabel}
-        onLocationClick={handleLocationClick}
-        childrenBefore={childrenBefore}
-        childrenAfter={childrenAfter}
-      />
-    </main>
+    <div className="svg-map">
+      <SVGMap ref={mapRef} />
+    </div>
   );
 }
-
-Map.propTypes = {
-  selectedLocationId: PropTypes.string,
-  onChange: PropTypes.func,
-
-  // SVGMap props
-  map: PropTypes.shape({
-    viewBox: PropTypes.string.isRequired,
-    locations: PropTypes.arrayOf(
-      PropTypes.shape({
-        path: PropTypes.string.isRequired,
-        label: PropTypes.string,
-        id: PropTypes.string,
-      })
-    ).isRequired,
-    label: PropTypes.string,
-  }).isRequired,
-  className: PropTypes.string,
-  locationClassName: PropTypes.string,
-  locationAriaLabel: PropTypes.func,
-  childrenBefore: PropTypes.node,
-  childrenAfter: PropTypes.node,
-};
 
 export default Map;

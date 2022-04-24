@@ -3,11 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 
 import { setLocation } from "../../store/slices/locationSlice";
-import floor0 from "../../assets/maps/floor0.json";
+import rooms from "../../data/rooms.json";
 
 import "./SearchBar.scss";
-
-const floors = [floor0];
 
 const groupStyles = {
   display: "flex",
@@ -45,7 +43,7 @@ function SearchBar() {
 
   return (
     <Select
-      options={floors[0].locations}
+      options={rooms}
       formatGroupLabel={formatGroupLabel}
       onChange={handleInputChange}
       value={location.value}

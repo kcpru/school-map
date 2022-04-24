@@ -1,21 +1,19 @@
-svg {
-  .path {
+.rooms {
+  stroke-linejoin: round;
+
+  &.clickable {
+    fill: #9fd75b;
     cursor: pointer;
-    transition: 0.1s;
-    fill: #d3f5f6;
-    stroke: #1bd1cf;
     stroke-width: 5px;
-
-    &:hover,
-    &.active {
-      fill: #1bd1ce75;
-    }
-
-    &.active {
-      fill: #1bd1cf;
-    }
+  }
+  &.active {
+    fill: #ff5b20a0;
+    stroke: #d75221;
+    outline: 2rem solid #d75221;
+    outline-offset: -2rem;
   }
 }
 
-// styles for line
-// fill:none;stroke:#71c48c;stroke-width:7px;stroke-linecap:round;stroke-linejoin:round
+.svg-map{
+  padding: 10rem;
+}
