@@ -56,6 +56,12 @@ class Path {
   constructor() {
     this.points = [];
   }
+
+  clone() {
+    const new_path = new Path();
+    new_path.points = [...this.points];
+    return new_path;
+  }
   get_distance_squared() {
     let distance = 0;
     for (let i = 1; i < this.points.length; i++) {
@@ -78,27 +84,40 @@ class Nav {
     }
   }
 
-  shortest_path(from, to, searched = new Set()) {
-    searched.add(from);
-    const results = [];
+  // A very unoptimized search but good enough for our use case
+  shortest_path(from, to, searched = new Map()) {
+    const paths = [];
+    searched.set(from, null);
     for (const neighboor of from.neighboors) {
+      if (neighboor == to) {
+        const path = new Path();
+        path.points.push(neighboor);
+        path.points.push(from);
+        searched.set(from, path);
+        return path;
+      }
+      let path;
       if (!searched.has(neighboor)) {
-        if (neighboor == to) {
-          let path = new Path();
-          path.points.push(to, from);
-          return path;
-        }
-        const res = this.shortest_path(neighboor, to, searched);
-        if (res instanceof Path) {
-          res.points.push(from);
-          results.push(res);
-        }
+        path = this.shortest_path(neighboor, to, searched);
+      } else {
+        path = searched.get(neighboor);
+      }
+
+      if (path != null) {
+        path = path.clone();
+        path.points.push(from);
+        paths.push(path);
       }
     }
-    if (results.length > 0) {
-      return results.reduce((max, val) =>
-        max.get_distance_squared() > val.get_distance_squared() ? max : val
-      );
+    if (paths.length > 0) {
+      let sh_path = paths[0];
+      for (const path of paths) {
+        if (sh_path.get_distance_squared() > path.get_distance_squared()) {
+          sh_path = path;
+        }
+      }
+      searched.set(from, sh_path);
+      return sh_path;
     }
   }
 }
