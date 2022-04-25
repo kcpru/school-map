@@ -361,4 +361,65 @@
          </g>
       </g>
    </g>
+  <circle
+     id="navpoint_1"
+     cx="554.09344"
+     cy="1139.5322"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_2" />
+  </circle>
+  <circle
+     id="navpoint_2"
+     cx="724.82959"
+     cy="1183.6982"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_1" />
+    <nav_neighbor
+       neighbor_id="navpoint_4" />
+  </circle>
+  <circle
+     id="navpoint_3"
+     cx="567.1319"
+     cy="1091.4596"
+     r="10"
+     nav_navpoint="1"
+     navpoint_poi_id="classroom_42">
+    <nav_neighbor
+       neighbor_id="navpoint_1" />
+  </circle>
+  <circle
+     id="navpoint_4"
+     cx="1119.4645"
+     cy="1287.4752"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_2" />
+    <nav_neighbor
+       neighbor_id="navpoint_5" />
+  </circle>
+  <circle
+     id="navpoint_5"
+     cx="1173.501"
+     cy="1298.4764"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_4" />
+    <nav_neighbor
+       neighbor_id="navpoint_6" />
+  </circle>
+  <circle
+     id="navpoint_6"
+     cx="1445.2242"
+     cy="1299.7297"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_5" />
+  </circle>
 </svg>

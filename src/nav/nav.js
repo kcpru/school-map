@@ -16,7 +16,7 @@ class NavPoint {
 
   // Add a neighboor ensuring there are no duplicates
   add_neighboor(neighboor) {
-    if (!this.neighboors.some((n) => n.id == neighboor.id)) {
+    if (!this.neighboors.some((n) => n === neighboor)) {
       this.neighboors.push(neighboor);
     }
   }
@@ -26,11 +26,10 @@ class NavPoint {
   }
 
   static fromSVGData(point) {
-      const attrs = point["$"];
-      const x = parseInt(attrs["cx"]);
-      const y = parseInt(attrs["cy"]);
-      const id = attrs["id"];
-      const poi_id = attrs["navpoint_poi_id"] ?? undefined;
+      const x = parseInt(point.getAttribute("cx"));
+      const y = parseInt(point.getAttribute("cy"));
+      const id = point.getAttribute("id");
+      const poi_id = point.getAttribute("navpoint_poi_id") ?? undefined;
 
       return new NavPoint(id, x, y, poi_id);
   }
@@ -83,12 +82,18 @@ class Nav {
     }
   }
 
+  path_from_poi_to_poi(poi_from, poi_to) {
+    let from = this.poi_nav_point(poi_from)
+    let to = this.poi_nav_point(poi_to)
+    return this.shortest_path(from, to)
+  }
+
   // A very unoptimized search but good enough for our use case Replace with dijkstra for speed
   shortest_path(from, to, searched = new Map()) {
     const paths = [];
     searched.set(from, null);
     for (const neighboor of from.neighboors) {
-      if (neighboor == to) {
+      if (neighboor === to) {
         const path = new Path();
         path.points.push(neighboor);
         path.points.push(from);
@@ -119,19 +124,23 @@ class Nav {
       return sh_path;
     }
   }
+  /**
+ * @param {SVGElement} nav_data 
+ */
   static fromSVGData(nav_data) {
     const points = []
     const vertecies = []
-    for (const point_data of nav_data) {
+    for (const point_data of nav_data.querySelectorAll("[nav_navpoint]")) {
       let point = NavPoint.fromSVGData(point_data)
       points.push(point)
-      for (const neighboor of point_data["nav:neighboor"]) {
-        let right = neighboor["$"]["neighboor_id"];
-        vertecies.push([point.id,right])
+      let left = point.id
+      for (const neighboor of point_data.querySelectorAll("nav_neighbor")) {
+        let right = neighboor.getAttribute("neighbor_id");
+        vertecies.push([left,right])
       }
     }
     return new Nav(points, vertecies)
   }
 }
 
-module.exports = { Nav, NavPoint };
+export { Nav, NavPoint, Path };

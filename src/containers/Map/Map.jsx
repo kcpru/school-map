@@ -4,6 +4,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 import { setLocation } from "../../store/slices/locationSlice";
 import { groundFloorRooms, firstFloorRooms } from "../../data/rooms";
+import { Nav } from  "../../nav/nav";
 
 import "./SVGMap.scss";
 
@@ -21,6 +22,7 @@ function Map({ children }) {
 
   useEffect(() => {
     const mapElements = [...mapRef.current.getElementsByClassName("room")];
+    const nav = Nav.fromSVGData(mapRef.current)
 
     // Set the active location
     if (activeLocation) {
