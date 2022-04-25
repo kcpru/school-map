@@ -1,19 +1,26 @@
 .rooms {
   stroke-linejoin: round;
+  transition: 0.1s;
 
   &.clickable {
-    fill: #9fd75b;
+    fill: #c9ebff;
     cursor: pointer;
-    stroke-width: 5px;
   }
   &.active {
-    fill: #ff5b20a0;
-    stroke: #d75221;
-    outline: 2rem solid #d75221;
-    outline-offset: -2rem;
+    fill: #ffd586;
+    // outline: 2rem solid #41d741;
+    // outline-offset: -2rem;
   }
 }
 
-.svg-map{
+.svg-map {
   padding: 10rem;
+
+  @media (max-width: 768px) {
+    padding: 5rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 7rem 0rem;
+  }
 }

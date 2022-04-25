@@ -87,5 +87,30 @@
     "id": "classroom-42",
     "label": "Sala 42",
     "description": "Język włoski"
+  },
+  {
+    "id": "classroom-4i",
+    "label": "Sala 4i",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-2i",
+    "label": "Sala 2i",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-1i",
+    "label": "Sala 1i",
+    "description": "Język włoski"
+  },
+  {
+    "id": "classroom-3i",
+    "label": "Sala 3i",
+    "description": "Język włoski"
+  },
+  {
+    "id": "canteen",
+    "label": "Stołówka",
+    "description": ""
   }
 ]
