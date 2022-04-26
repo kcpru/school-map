@@ -33,6 +33,7 @@ function Map({ children }) {
       activeLocationElement && activeLocationElement.classList.add("active");
     }
 
+    // TODO: fix data duplication
     mapElements.forEach((element) => {
       if (rooms.find((room) => room.id === element.id)) {
         // Show rooms which are defined in the data
@@ -44,6 +45,7 @@ function Map({ children }) {
           // Find data for the clicked element
           const clickedLocation =
             rooms.find((el) => el.id === element.id) ?? {};
+
           dispatch(setLocation(clickedLocation));
         });
       }
