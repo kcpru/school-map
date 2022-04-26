@@ -66,6 +66,7 @@
   {
     "id": "large-hall",
     "label": "Duża sala gimnastyczna",
-    "description": ""
+    "description": "",
+    "floor": 0
   }
 ]
