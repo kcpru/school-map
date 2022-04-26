@@ -416,10 +416,280 @@
   <circle
      id="navpoint_6"
      cx="1445.2242"
-     cy="1299.7297"
+     cy="1299"
      r="10"
      nav_navpoint="1">
     <nav_neighbor
        neighbor_id="navpoint_5" />
+    <nav_neighbor
+       neighbor_id="navpoint_7" />
+  </circle>
+  <circle
+     id="navpoint_7"
+     cx="1989.1063"
+     cy="1299"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_6" />
+    <nav_neighbor
+       neighbor_id="navpoint_8" />
+  </circle>
+  <circle
+     id="navpoint_8"
+     cx="2306.1697"
+     cy="1299"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_7" />
+    <nav_neighbor
+       neighbor_id="navpoint_9" />
+  </circle>
+  <circle
+     id="navpoint_9"
+     cx="2626.4558"
+     cy="1299"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_8" />
+  </circle>
+  <circle
+     id="navpoint_10"
+     cx="3054.4678"
+     cy="1299"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_9" />
+  </circle>
+  <circle
+     id="navpoint_11"
+     cx="853.35205"
+     cy="1216.3767"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_2" />
+    <nav_neighbor
+       neighbor_id="navpoint_12" />
+  </circle>
+  <circle
+     id="navpoint_12"
+     cx="875.6131"
+     cy="1222.1935"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_11" />
+    <nav_neighbor
+       neighbor_id="navpoint_4" />
+    <nav_neighbor
+       neighbor_id="navpoint_13" />
+  </circle>
+  <circle
+     id="navpoint_13"
+     cx="749.84338"
+     cy="1694.9855"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_16" />
+  </circle>
+  <circle
+     id="navpoint_14"
+     cx="794.74994"
+     cy="1532.4801"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_12" />
+    <nav_neighbor
+       neighbor_id="navpoint_16" />
+  </circle>
+  <circle
+     id="navpoint_15"
+     cx="644.76752"
+     cy="1647.8164"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_16" />
+  </circle>
+  <circle
+     id="navpoint_16"
+     cx="756.93597"
+     cy="1669.9125"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_13" />
+    <nav_neighbor
+       neighbor_id="navpoint_14" />
+    <nav_neighbor
+       neighbor_id="navpoint_15" />
+  </circle>
+  <circle
+     id="navpoint_17"
+     cx="710"
+     cy="1864"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_13" />
+  </circle>
+  <circle
+     id="navpoint_18"
+     cx="751"
+     cy="1870"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_17" />
+  </circle>
+  <circle
+     id="navpoint_19"
+      cx="666"
+    cy="1856"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_17" />
+  </circle>
+  <circle
+     id="navpoint_20"
+	cx="682"
+	cy="1979"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_17" />
+  </circle>
+  <circle
+     id="navpoint_21"
+     cx="720"
+     cy="1988"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_20" />
+  </circle>
+  <circle
+     id="navpoint_22"
+	cx="636"
+	cy="1966"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_20" />
+  </circle>
+  <circle
+     id="navpoint_23"
+	cx="667"
+	cy="2034"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_20" />
+  </circle>
+  <circle
+     id="navpoint_24"
+     cx="697"
+	cy="2041"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_23" />
+  </circle>
+  <circle
+     id="navpoint_25"
+	cx="654"
+	cy="2072"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_23" />
+  </circle>
+  <circle
+     id="navpoint_26"
+	cx="614"
+	cy="2065"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_25" />
+  </circle>
+  <circle
+     id="navpoint_27"
+	cx="636"
+	cy="2157"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_25" />
+  </circle>
+  <circle
+     id="navpoint_28"
+	cx="586"
+	cy="2151"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_27" />
+  </circle>
+  <circle
+     id="navpoint_29"
+	cx="720"
+	cy="2176"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_27" />
+  </circle>
+  <circle
+     id="navpoint_30"
+     cx="1445.2242"
+     cy="1254"
+     r="10"
+     nav_navpoint="1">
+    <nav_neighbor
+       neighbor_id="navpoint_6" />
+  </circle>
+  <circle
+     id="navpoint_31"
+     cx="1989.1063"
+     cy="1254"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_7" />
+  </circle>
+  <circle
+     id="navpoint_32"
+     cx="2306.1697"
+     cy="1254"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_8" />
+  </circle>
+  <circle
+     id="navpoint_33"
+     cx="2626.4558"
+     cy="1254"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_9" />
+  </circle>
+  <circle
+     id="navpoint_34"
+     cx="3054.4678"
+     cy="1254"
+     nav_navpoint="1"
+     r="10">
+    <nav_neighbor
+       neighbor_id="navpoint_10" />
   </circle>
 </svg>
