@@ -2,57 +2,66 @@
   {
     "id": "classroom-1",
     "label": "Sala 1",
-    "description": ""
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
   },
   {
     "id": "classroom-2",
     "label": "Sala 2",
-    "description": ""
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
   },
   {
     "id": "classroom-10",
     "label": "Sala 10",
-    "description": ""
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
   },
   {
     "id": "classroom-30",
     "label": "Sala 30",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "classroom-32",
     "label": "Sala 32",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "classroom-36",
     "label": "Sala 36",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "classroom-37",
     "label": "Sala 37",
-    "description": ""
-  },
-  {
-    "id": "classroom-55",
-    "label": "Sala 55",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "classroom-3i",
     "label": "Sala 3i",
-    "description": ""
+    "description": "",
+    "tag": "internat",
+    "floor": 0
   },
   {
     "id": "classroom-12i",
     "label": "Sala 12i",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "small-hall",
     "label": "Mała sala gimnastyczna",
-    "description": ""
+    "description": "",
+    "floor": 0
   },
   {
     "id": "large-hall",

@@ -1,4 +1,4 @@
-.rooms {
+.room {
   stroke-linejoin: round;
   transition: 0.1s;
   // stroke: #242446;
@@ -22,4 +22,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+// Reference from SVG Maps
+.background {
+  fill: #cfcfde;
+}
+.floor {
+  fill: #fcfcfc;
+}
+.room {
+  fill: #a0a0b4;
+}
+.stairs {
+  fill: #ecabd3;
+}
+.wall {
+  fill: none;
+  stroke: #242446;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 12px;
 }

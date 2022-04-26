@@ -3,9 +3,20 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 
 import { setLocation } from "../../store/slices/locationSlice";
-import rooms from "../../data/rooms.json";
+import { groundFloorRooms, firstFloorRooms } from "../../data/rooms";
 
 import "./SearchBar.scss";
+
+const groupedRooms = [
+  {
+    label: "Parter",
+    options: groundFloorRooms,
+  },
+  {
+    label: "1 Piętro",
+    options: firstFloorRooms,
+  },
+];
 
 const groupStyles = {
   display: "flex",
@@ -13,23 +24,27 @@ const groupStyles = {
   justifyContent: "space-between",
 };
 
+const groupLabelStyles = {
+  color: "#A0A0B4",
+};
+
 const groupBadgeStyles = {
-  backgroundColor: "#EBECF0",
-  borderRadius: "2em",
+  backgroundColor: "#d4d7e2",
+  borderRadius: "1rem",
   color: "#172B4D",
   display: "inline-block",
   fontSize: 12,
-  fontWeight: "normal",
+  fontWeight: "bold",
   lineHeight: "1",
   minWidth: 1,
-  padding: "0.16666666666667em 0.5em",
+  padding: "0.2rem 0.5rem",
   textAlign: "center",
 };
 
 const formatGroupLabel = (data) => (
   <div style={groupStyles}>
-    <span>{data.label}</span>
-    <span style={groupBadgeStyles}>{data.locations.length}</span>
+    <span style={groupLabelStyles}>{data.label}</span>
+    <span style={groupBadgeStyles}>{data.options.length}</span>
   </div>
 );
 
@@ -43,7 +58,7 @@ function SearchBar() {
 
   return (
     <Select
-      options={rooms}
+      options={groupedRooms}
       formatGroupLabel={formatGroupLabel}
       onChange={handleInputChange}
       value={location.value}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "classroom-50",
+    "label": "Sala 50",
+    "description": "",
+    "floor": 1
+  },
+  {
+    "id": "classroom-55",
+    "label": "Sala 55",
+    "description": "",
+    "floor": 1
+  },
+  {
+    "id": "classroom-56",
+    "label": "Sala 56",
+    "description": "",
+    "floor": 1
+  }
+]
