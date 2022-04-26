@@ -6,8 +6,7 @@ import "./Info.scss";
 function Info() {
   const location = useSelector((state) => state.location.value);
 
-  console.log(location)
-  if (location?.description.length !== 0)
+  if (location?.description?.length !== 0)
     return <div className="info">{location.description}</div>;
   return <div></div>;
 }

@@ -12,6 +12,12 @@
     "description": "",
     "tag": "warsztaty",
     "floor": 0
+  }, {
+    "id": "classroom-6",
+    "label": "Sala 6",
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
   },
   {
     "id": "classroom-8",
