@@ -1,26 +1,25 @@
 .rooms {
   stroke-linejoin: round;
   transition: 0.1s;
+  // stroke: #242446;
+  // stroke-linecap: round;
+  // stroke-linejoin: round;
+  // stroke-width: 12px;
 
   &.clickable {
+    // stroke: none;
     fill: #c9ebff;
     cursor: pointer;
   }
   &.active {
     fill: #ffd586;
-    // outline: 2rem solid #41d741;
-    // outline-offset: -2rem;
+    // stroke: none;
   }
 }
 
 .svg-map {
-  padding: 10rem;
-
-  @media (max-width: 768px) {
-    padding: 5rem;
-  }
-
-  @media (max-width: 576px) {
-    padding: 7rem 0rem;
-  }
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

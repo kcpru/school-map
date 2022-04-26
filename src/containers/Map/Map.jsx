@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 import { ReactComponent as SVGMap } from "../../assets/maps/groundFloor.svg";
 import { setLocation } from "../../store/slices/locationSlice";
@@ -50,9 +51,13 @@ function Map() {
   });
 
   return (
-    <div className="svg-map">
-      <SVGMap ref={mapRef} />
-    </div>
+    <TransformWrapper>
+      <TransformComponent>
+        <div className="svg-map">
+          <SVGMap ref={mapRef} />
+        </div>
+      </TransformComponent>
+    </TransformWrapper>
   );
 }
 

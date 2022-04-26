@@ -1,60 +1,53 @@
 [
   {
     "id": "classroom-1",
-    "name": "Sala 1",
+    "label": "Sala 1",
     "description": ""
   },
   {
     "id": "classroom-2",
-    "name": "Sala 2",
+    "label": "Sala 2",
     "description": ""
   },
-
   {
     "id": "classroom-10",
-    "name": "Sala 10",
+    "label": "Sala 10",
     "description": ""
   },
-
   {
     "id": "classroom-30",
     "label": "Sala 30",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-32",
     "label": "Sala 32",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-36",
     "label": "Sala 36",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-37",
     "label": "Sala 37",
-    "description": "Język angielski"
-  },
-  {
-    "id": "classroom-42",
-    "label": "Sala 42",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-55",
     "label": "Sala 55",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-3i",
     "label": "Sala 3i",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "classroom-12i",
     "label": "Sala 12i",
-    "description": "Język angielski"
+    "description": ""
   },
   {
     "id": "small-hall",

@@ -2,7 +2,7 @@
 <svg viewBox="0 0 5145.96 3594.03" version="1.1" id="svg353">
 
    <defs id="defs4">
-      <style id="style2">.cls-1{fill:#CFCFDE;}.cls-2{fill:#fcfcfc;}.rooms{fill:#A0A0B4;}.cls-4{fill:#ecabd3;}.cls-5{fill:none;stroke:#242446;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px;}</style>
+      <style id="style2">.cls-1{fill:#CFCFDE;}.cls-2{fill:#fcfcfc;}.rooms{fill:#A0A0B4;}.cls-4{fill:#ecabd3;}.cls-5{fill:none;stroke:#242446;stroke-linecap:round;stroke-linejoin:round;stroke-width:12px;}</style>
    </defs>
    <g id="Layer_2" data-name="Layer 2">
       <g id="groundFloor">
@@ -19,9 +19,9 @@
                <rect class="rooms" x="882.9" y="1308.96" width="212.69" height="113.23" transform="translate(376.31 -205.32) rotate(14.61)" id="rect16" />
                <rect class="rooms" x="107.9" y="1024.83" width="398.26" height="103.73" transform="translate(281.42 -42.63) rotate(14.61)" id="rect18" />
                <rect class="rooms" x="147.2" y="821.86" width="497.02" height="220.66" transform="matrix(0.97, 0.25, -0.25, 0.97, 247.85, -69.66)" id="classroom-42" />
-               <polygon class="rooms" points="1073.53 996.9 1016.91 1214.19 1049.51 1222.69 1049.51 1222.69 1161.92 1251.98 1188.11 1251.98 1188.11 1026.76 1073.53 996.9" id="polygon22" />
+               <polygon class="rooms" points="1073.53 996.9 1016.91 1214.19 1049.51 1222.69 1049.51 1222.69 1161.92 1251.98 1188.11 1251.98 1188.11 1026.76 1073.53 996.9" id="classroom-37" />
                <rect class="rooms" x="626.55" y="961.55" width="206.67" height="168.84" transform="translate(287.33 -150.25) rotate(14.61)" id="41" />
-               <rect class="rooms" x="1611.74" y="1026.78" width="429.78" height="225.22" id="rect26" />
+               <rect class="rooms" x="1611.74" y="1026.78" width="429.78" height="225.22" id="classroom-32" />
                <rect class="rooms" x="2041.52" y="1026.78" width="424" height="225.22" id="classroom-30" />
                <rect class="rooms" x="2465.52" y="1026.78" width="324" height="225.22" id="rect30" />
                <rect id="classroom-27" class="rooms" x="2789.52" y="1026.78" width="319.11" height="225.22" />
@@ -52,7 +52,7 @@
                <polygon class="rooms" points="3648.02 928.33 3620.25 928.33 3437.29 928.33 3437.29 1031.56 3654.29 1031.56 3654.29 928.33 3648.02 928.33" id="polygon81" />
                <polygon class="rooms" points="3648.02 814.67 3620.25 814.67 3437.29 814.67 3437.29 928.33 3654.29 928.33 3654.29 814.67 3648.02 814.67" id="polygon83" />
                <polygon class="rooms" points="4347.81 79.64 4336.8 79.64 4264.29 79.64 4264.29 1467.19 4350.29 1467.19 4350.29 79.64 4347.81 79.64" id="polygon85" />
-               <polygon class="rooms" points="5036.22 79.64 4945.83 79.64 4350.29 79.64 4350.29 1467.19 5056.63 1467.19 5056.63 79.64 5036.22 79.64" id="polygon87" />
+               <polygon class="rooms" points="5036.22 79.64 4945.83 79.64 4350.29 79.64 4350.29 1467.19 5056.63 1467.19 5056.63 79.64 5036.22 79.64" id="large-hall" />
                <polygon class="rooms" points="3758.2 1139.39 3744.51 1139.39 3654.29 1139.39 3654.29 1359.42 3761.29 1359.42 3761.29 1139.39 3758.2 1139.39" id="polygon89" />
                <polygon class="rooms" points="3892.07 1139.39 3874.84 1139.39 3761.29 1139.39 3761.29 1359.81 3895.96 1359.81 3895.96 1139.39 3892.07 1139.39" id="polygon91" />
                <polygon class="rooms" points="3971.06 1139.39 3961.16 1139.39 3895.96 1139.39 3895.96 1359.42 3973.29 1359.42 3973.29 1139.39 3971.06 1139.39" id="polygon93" />
@@ -70,7 +70,7 @@
                <polygon class="rooms" points="3434.27 79.64 3420.88 79.64 3332.63 79.64 3332.63 223.42 3437.29 223.42 3437.29 79.64 3434.27 79.64" id="polygon117" />
                <polygon id="_Path_" data-name="&lt;Path&gt;" class="rooms" points="3328.89 79.64 3313.84 79.64 3214.63 79.64 3214.63 187.64 3332.29 187.64 3332.29 79.64 3328.89 79.64" />
                <polygon class="rooms" points="3326.04 187.64 3298.36 187.64 3214.63 187.64 3214.63 79.64 3211.78 79.64 3199.2 79.64 3116.29 79.64 3116.29 187.64 3115.96 187.64 3115.96 434.33 3332.29 434.33 3332.29 187.64 3326.04 187.64" id="polygon120" />
-               <polygon class="rooms" points="3859.48 79.64 3803.85 79.64 3437.29 79.64 3437.29 814.67 3872.04 814.67 3872.04 79.64 3859.48 79.64" id="polygon122" />
+               <polygon class="rooms" points="3859.48 79.64 3803.85 79.64 3437.29 79.64 3437.29 814.67 3872.04 814.67 3872.04 79.64 3859.48 79.64" id="small-hall" />
                <polygon class="rooms" points="3002.29 2878 3002.29 3109 3132.29 3162.69 3132.29 2878 3002.29 2878" id="polygon124" />
                <polygon class="rooms" points="3348.13 3075.59 3310.37 3236.12 3507.46 3316.84 3507.46 3075.07 3348.13 3075.59" id="polygon126" />
                <rect class="rooms" x="126.21" y="2667.21" width="377.44" height="217.17" transform="translate(-2450.58 2380.61) rotate(-75.39)" id="rect128" />
