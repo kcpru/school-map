@@ -14,10 +14,33 @@
     "floor": 0
   },
   {
+    "id": "classroom-8",
+    "label": "Sala 8",
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
+  },
+  {
     "id": "classroom-10",
     "label": "Sala 10",
     "description": "",
     "tag": "warsztaty",
+    "floor": 0
+  },  {
+    "id": "classroom-14",
+    "label": "Sala 14",
+    "description": "",
+    "tag": "warsztaty",
+    "floor": 0
+  },  {
+    "id": "classroom-26",
+    "label": "Sala 26",
+    "description": "",
+    "floor": 0
+  }, {
+    "id": "classroom-27",
+    "label": "Sala 27",
+    "description": "",
     "floor": 0
   },
   {
@@ -41,6 +64,16 @@
   {
     "id": "classroom-37",
     "label": "Sala 37",
+    "description": "",
+    "floor": 0
+  },  {
+    "id": "classroom-38",
+    "label": "Sala 38",
+    "description": "",
+    "floor": 0
+  },  {
+    "id": "classroom-42",
+    "label": "Sala 42",
     "description": "",
     "floor": 0
   },

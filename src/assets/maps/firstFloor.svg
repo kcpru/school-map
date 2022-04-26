@@ -11,7 +11,7 @@
         <polygon class="floor" points="1222.08 367.21 202.87 102.11 105.64 475.92 521.38 584.06 389.25 1092.07 982.65 1246.41 1114.78 738.41 1150.61 747.72 1150.61 749.22 4188.78 749.22 4188.78 367.21 1222.08 367.21"/>
       </g>
       <g id="rooms">
-        <rect class="room" x="1212.78" y="367.22" width="507" height="264.44"/>
+        <rect id="classroom-51" class="room" x="1212.78" y="367.22" width="507" height="264.44"/>
         <rect class="room" x="162.64" y="152.68" width="438.41" height="264.29" transform="translate(83.99 -86.95) rotate(14.58)"/>
         <rect class="room" x="116.21" y="390.25" width="276.22" height="122.85" transform="matrix(0.97, 0.25, -0.25, 0.97, 121.89, -49.48)"/>
         <rect class="room" x="590.79" y="233.52" width="203.72" height="264.29" transform="translate(114.35 -162.59) rotate(14.58)"/>
@@ -23,10 +23,10 @@
         <rect class="room" x="1719.78" y="367.22" width="130" height="264.44"/>
         <rect id="classroom-55" class="room" x="1849.78" y="369.44" width="384" height="264.44"/>
         <rect id="classroom-56" class="room" x="2233.78" y="369.44" width="382" height="264.44"/>
-        <rect class="room" x="2615.78" y="369.44" width="389" height="264.44"/>
-        <rect class="room" x="3004.78" y="367.22" width="131" height="264.44"/>
-        <rect class="room" x="3135.78" y="367.22" width="382" height="264.44"/>
-        <rect class="room" x="3788.78" y="367.22" width="400" height="264.44"/>
+        <rect id="classroom-57" class="room" x="2615.78" y="369.44" width="389" height="264.44"/>
+        <rect id="classroom-58" class="room" x="3004.78" y="367.22" width="131" height="264.44"/>
+        <rect id="classroom-59" class="room" x="3135.78" y="367.22" width="382" height="264.44"/>
+        <rect id="classroom-60" class="room" x="3788.78" y="367.22" width="400" height="264.44"/>
         <rect class="room" x="3881.78" y="631.66" width="307" height="117.56"/>
       </g>
       <g id="stairs">

@@ -4,6 +4,11 @@
     "label": "Sala 50",
     "description": "",
     "floor": 1
+  }, {
+    "id": "classroom-51",
+    "label": "Sala 51",
+    "description": "",
+    "floor": 1
   },
   {
     "id": "classroom-55",
@@ -14,6 +19,29 @@
   {
     "id": "classroom-56",
     "label": "Sala 56",
+    "description": "",
+    "floor": 1
+  }, {
+    "id": "classroom-57",
+    "label": "Sala 57",
+    "description": "",
+    "floor": 1
+  },
+  {
+    "id": "classroom-58",
+    "label": "Sala 58",
+    "description": "",
+    "floor": 1
+  },
+  {
+    "id": "classroom-59",
+    "label": "Sala 59",
+    "description": "",
+    "floor": 1
+  },
+  {
+    "id": "classroom-60",
+    "label": "Sala 60",
     "description": "",
     "floor": 1
   }
